@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/9986c47bcf.js" crossorigin="anonymous"></script>
+  <script defer src="./index.js"></script>
+  <link rel="stylesheet" href="./index.css">
+  <title>Music Player Mini Project</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="musicPlayer">
+      <nav>
+        <div class="circle">
+          <i class="fa-solid fa-angle-left"></i>
+        </div>
+        <div class="circle">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </nav>
+      <img src="./img/468-thumbnail.png" alt="img" class="songImg">
+      <h1>Despacito</h1>
+      <p>Luis Fonsi FT. Puerto Rican</p>
+
+      <audio id="song">
+        <source src="media/Go-NEFFEX.mp3" type="audio/mpeg">
+      </audio>
+      <input type="range" value="100" id="progress">
+
+      <div class="controls">
+        <div>
+          <i class="fa-solid fa-backward"></i>
+        </div>
+        <div>
+          <i onclick="playPause()" class="fa-solid fa-play" id="ctrlIcon"></i>
+        </div>
+        <div>
+          <i class="fa-solid fa-forward"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
