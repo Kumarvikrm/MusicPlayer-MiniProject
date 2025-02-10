@@ -16,10 +16,11 @@
 }
 
 .musicPlayer {
-  background: #ffe0e5;
+  background: linear-gradient(to right, #ffecef, #ffb6c1, #f5cca2);
   width: 400px;
   padding: 25px 35px;
   text-align: center;
+  border-radius: 8px;
 }
 
 nav {
@@ -42,6 +43,15 @@ nav .circle {
 nav .circle:hover {
   background: #f53192;
   color: #fff;
+  animation: round 0.5s linear;
+}
+@keyframes round{
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(90deg);
+  }
 }
 
 .songImg {
@@ -49,6 +59,14 @@ nav .circle:hover {
   border-radius: 50%;
   border: 8px solid #fff;
   box-shadow: 0 10px 60px rgba(255, 26, 26, 0.22);
+}
+@keyframes rotate360 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .musicPlayer h1 {
